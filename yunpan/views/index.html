@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/main.css">
+  <style>
+  html,body,ul,li{
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style: none;
+  }
+/*➜*/
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="pop-up"></div>
+      <div class="pop-up1">
+        <span>请确认是否删除选中项</span>
+        <div class="ack">确认</div>
+        <div class="cal">取消</div>
+      </div>
+      <div class="left">
+        <ul>
+          <li>
+            <a href="javascript:;"><span class="active">网盘</span></a>
+          </li>
+          <li>
+            <span>分享</span>
+          </li>
+          <li>
+            <span>更多</span>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+
+              <span class="img"></span>
+              <span class="user">盗版</span>
+              <span class="arrow"></span>
+
+              <div class="user-info"></div>
+
+          </li>
+          <li>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <span>客户端下载</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;"><span class="bell"></span></a>
+          </li>
+          <li>
+            <a href="javascript:;"><span class="book"></span></a>
+          </li>
+          <li>
+            <a href="javascript:;"><span class="theme"></span></a>
+          </li>
+          <li>
+            <a href="javascript:;"><span class="vip">会员中心</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="user-info"></div>
+    <div class="left-nav">
+      <ul>
+        <li><span class="all active">全部文件</span></li>
+        <li><span>图片</span></li>
+        <li><span>文档</span></li>
+        <li><span>视频</span></li>
+        <li><span>种子</span></li>
+        <li><span>音乐</span></li>
+        <li><span>其他</span></li>
+        <li><span class = "share">我的分享</span></li>
+        <li><span class = "recycle">回收站</span></li>
+        <li><span class = "g2048">免费领取2048G</span></li>
+        <li>
+          <span class = "used"></span>
+          <span class = "usedG"> 0B/5G </span>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="menu">
+        <span class="upload">上传
+          <div class="box">
+            <a>上传文件</a>
+            <a>上传文件夹</a>
+          </div>
+        </span>
+        <a href="javascript:;"><span class="create-folder">新建文件夹</span></a>
+        <a href="javascript:;"><span class="off-line">离线下载</span></a>
+        <span class="myEquip">我的设备
+          <div class="box">
+            <a>推送任务列表</a>
+            <a>添加设备</a>
+          </div>
+        </span>
+        <div class="menu-many">
+          <a href="javascript:;"><span>分享</span></a>
+          <a href="javascript:;"><span>下载</span></a>
+          <a href="javascript:;"><span class="delete">删除</span></a>
+          <a href="javascript:;"><span class="re-name">重命名</span></a>
+          <a href="javascript:;"><span class="copy-to">复制到</span></a>
+          <a href="javascript:;"><span class="move-to">移动到</span></a>
+          <a href="javascript:;"><span>更多的</span></a>
+        </div>
+        <div class="img2"></div>
+        <div class="img1">
+          <div class="box">
+            <a>文件名</a>
+            <a>大小</a>
+            <a>日期</a>
+          </div>
+        </div>
+        <input type="text" class="txt" value = "搜索您的文件">
+      </div>
+      <div class="conment">
+        <span>已全部加载，共<em>0</em>个</span>
+        <span>返回上一级</span>
+        <em style="opacity:0">|</em>
+        <span>全部文件</span>
+
+      </div>
+      <div class="tip">
+        <div class="block"></div>
+        <span>全选</span>
+        <span>大小 <strong>↓</strong></span>
+        <span>修改日期</span>
+      </div>
+      <div class="content">
+        <!-- <div class="folder-wrap">
+          <span>✔</span>
+          <div class="name">新建文件夹1</div>
+          <div class="rename">
+            <input type="text" class="text" value = ''>
+            <a>✔</a>
+            <a>✘</a>
+          </div>
+        </div>
+        <div class="folder-wrap">
+            <span>✔</span>
+          <div class="name"></div>
+        </div> -->
+        <!-- <ul>
+          <li>
+            <div class="block"></div>
+            <span>新建文件夹2</span>
+            <strong>2016-02-16</strong>
+          </li>
+        </ul> -->
+
+      </div>
+    </div>
+  </div>
+  <div class="shadow">
+    <div class="close">✘</div>
+    <div class="moveTo">
+      <div class="top">移动到<srong class="xx">X</srong></div>
+      <div class="main">
+        <ul class="all">
+          <li>
+            <div class="total" data-index = '0'>
+              <em class="before"> </em>
+              <span>全部文件</span>
+            </div>
+            <ul class = 'list'>
+            </li>
+
+          </ul>
+        </ul>
+        <div class="scroll-wrap">
+          <div class="scroll"></div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="newC">新建文件夹</div>
+        <div class="cancel">取消</div>
+        <div class="ack">确认</div>
+      </div>
+    </div>
+    <div class="tip">
+      <div class="top">移动文件<srong class="xxx">✘</srong></div>
+      <div class="bala">移动的位置已经包含了同名的文件夹，请选择你的操作：</div>
+      <div class="main">
+
+        <div class="had">
+          <em>已有文件夹</em>
+          <span>4</span>
+        </div>
+        <div class="move">
+          <em>正在移动文件夹</em>
+          <span>4</span>
+        </div>
+      </div>
+      <div class="balabala">
+        <div></div>
+        为其余的
+        <strong class="count">3</strong>
+        个重名文件夹都执行此操作
+      </div>
+      <div class="bottom">
+        <div class="pass">跳过</div>
+        <div class="two">保留两个文件夹</div>
+        <div class="cancel1">取消</div>
+      </div>
+    </div>
+  </div>
+  <div class="contextmenu-wrap">
+		<div class="contextmenu">
+      <span class="contextmenu-open">打开</span>
+      <span class="notdo">下载</span>
+      <em></em>
+      <span class="notdo">推送到设备</span>
+      <em></em>
+      <span class="notdo">分享</span>
+      <em></em>
+      <span class="contextmenu-copy">复制到</span>
+      <span class="contextmenu-move">移动到</span>
+      <em></em>
+      <span class="contextmenu-rename">重命名</span>
+      <span class="contextmenu-delete">删除</span>
+      <span class="notdo">历史版本</span>
+    </div>
+    <div class="contextmenu">
+      <span class="notdo">查看</span>
+      <span class="notdo">排列方式</span>
+      <span class="notdo">刷新</span>
+      <em></em>
+      <span class="notdo">重新加载页面</span>
+      <span class="contextmenu-create">新建文件夹</span>
+      <em></em>
+      <span class="notdo">会员中心</span>
+    </div>
+	</div>
+  <script src="script/data.js" charset="utf-8"></script>
+  <script src="script/tool.js" charset="utf-8"></script>
+  <script src="script/view.js" charset="utf-8"></script>
+
+  <script src="script/method.js" charset="utf-8"></script>
+  <script>
+    content.addEventListener('mousedown',mouseBox);
+
+
+  </script>
+</body>
+</html>

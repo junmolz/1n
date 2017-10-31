@@ -1,0 +1,19 @@
+{
+  "name": "crossdomain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "i": "^0.3.5",
+    "nodemon": "^1.11.0"
+  }
+}
